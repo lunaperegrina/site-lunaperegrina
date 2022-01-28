@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button-red {
+    background-color: #D6000D;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 18pt;
+    padding: 18px 55px 18px 55px;
+    margin: 30px 20px 30px 0px;
+    transition: .4s;
+}
+
+.button-red:hover {
+    background-color: #e95050;
+    transition: .4s;
+}
+
+
+/************************************************************************/
+
+.header {
+    display: flex;
+    /* background-color: #333; */
+    align-items: center;
+    font-size: 18pt;
+}
+
+.titulo-header {
+    /* background-color: #666; */
+    margin-left: 20px;
+    color: #D6000D;
+    font-style: italic;
+    font-weight: 700;
+    flex: 1;
+}
+
+.ponto-codar {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ul-nav {
+    /* background-color: #aaa; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px 20px 0px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.ul-nav li {
+    padding-left: 30px;
+}
+
+
+/************************************************************************/
+
+.parte1 {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.parte1-textos {
+    margin-left: 5%;
+}
+
+.parte1-title {
+    margin: 0px;
+    color: #D6000D;
+    font-weight: 700;
+    font-size: 44pt;
+}
+
+.image-videocall {
+    margin-left: 10px;
+    height: 400px;
+}
+
+
+/************************************************************************/
+
+.ul-parte2 {
+    list-style-type: none;
+    font-size: 20pt;
+    margin-right: 200px;
+}
+
+.ul-parte2 li {
+    white-space: nowrap;
+    padding-top: 10px;
+    display: flex;
+}
+
+.icon-ok {
+    padding-right: 15px;
+}
+
+.ligamos-para-voce {
+    margin-left: 40px;
+}
+
+.ligamos-para-voce h1 {
+    margin: 0px;
+}
+
+.input-celular {
+    padding: 8px 20px 8px 20px;
+    border-style: none;
+    background-color: #eee;
+    border-radius: 10px;
+    font-size: 18pt;
+    width: 240px;
+}
+
+.input-celular {
+    padding: 18px 30px 18px 30px;
+    margin-right: 10px;
+}
+
+
+/**************************/
+
+.parte2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 200px auto 200px auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ligamos-para-voce {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/************************************************************************/
+
+.dois-cards {
+    margin: 100px;
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 100px auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.card {
+    background-color: #EEE;
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+/************************************************************************/
+
+.footer {
+    background-color: #000;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 200px auto 200px auto; */
+    padding: 40px 20px 50px 20px;
+    margin: 0px;
+}
+
+.info {
+    padding: 0px 20px 0px 20px;
+}
+
+.footer-icon {
+    margin-right: 20px;
+    height: 30px;
+}
+
+
+/*********************************************************************************/
+
+@media (max-width: 760px) {
+    .dois-cards {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin: 10px;
+    }
+    .footer {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .footer-icon {
+        height: 30px;
+    }
+    .parte2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* margin: 200px auto 200px auto; */
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .parte1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-icon {
+        height: 20px;
+    }
+}
+
+@media (max-width:1050px) {
+    .ul-parte2 {
+        margin-right: 0px;
+    }
+    .image-videocall {
+        height: 300px;
+    }
+    .image-coding {
+        height: 300px;
+    }
+}
