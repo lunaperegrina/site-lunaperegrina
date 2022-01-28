@@ -1,22 +1,47 @@
 html {
+    scroll-behavior: smooth;
     font-family: 'Hermit';
+    background: rgb(50, 15, 93);
+    background: linear-gradient(90deg, rgba(50, 15, 93, 1) 0%, rgba(183, 0, 255, 1) 100%);
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #B500FC;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #350F61;
+    border-radius: 5px;
+    border: 3px solid #B500FC;
 }
 
 body {
     margin: 0px;
     color: aliceblue;
     /* background-color: black; */
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    /* background: rgb(50, 15, 93);
+    background: linear-gradient(90deg, rgba(50, 15, 93, 1) 0%, rgba(183, 0, 255, 1) 100%); */
+    /* background: rgb(91, 27, 170);
+    background: linear-gradient(90deg, rgba(91, 27, 170, 1) 17%, rgba(0, 151, 255, 1) 100%); */
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: rgb(4, 30, 30);
+    /* background-color: rgb(4, 30, 30); */
     color: aliceblue;
     padding: 0px 10px 0px 10px;
     display: flex;
+    width: 95%;
+    margin: 30px auto 0px auto;
 }
 
 header h1 {
@@ -25,14 +50,15 @@ header h1 {
     font-size: 12pt;
 }
 
-header h1 a {
-    color: aliceblue;
-    text-decoration: none;
-}
-
 header ul {
     list-style: none;
     margin-right: 20px;
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @keyframes underline-piscando {
@@ -54,14 +80,7 @@ header ul {
 .parte1 {
     display: flex;
     width: 95%;
-    margin: 100px auto;
-}
-
-.parte1 .texto h2 {
-    color: aqua;
-    margin: 0px;
-    font-weight: 100;
-    font-size: 14pt;
+    margin: 120px auto 200px;
 }
 
 .parte1 .texto h1 {
@@ -69,6 +88,13 @@ header ul {
     font-weight: 100;
     font-size: 30pt;
     font-weight: bold;
+}
+
+.parte1 .texto h2 {
+    color: #e7aaff;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 16pt;
 }
 
 .parte1 .texto {
@@ -80,7 +106,7 @@ header ul {
     flex: 1;
     text-align: center;
     font-size: 200pt;
-    color: aqua;
+    color: #fff;
 }
 
 
