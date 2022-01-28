@@ -1,28 +1,37 @@
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400'); */
+
+@font-face {
+    font-family: 'Hermit';
+    src: url('../font-hermit/hermit-regular-webfont.woff') format('woff')
+}
+
 html {
     scroll-behavior: smooth;
     font-family: 'Hermit';
+    /* font-family: 'Anonymous Pro'; */
+    /* font-family: 'Raleway'; */
     background: rgb(50, 15, 93);
+    /* background: linear-gradient(90deg, #f06161 0%, #b700ff 100%); */
     background: linear-gradient(90deg, rgba(50, 15, 93, 1) 0%, rgba(183, 0, 255, 1) 100%);
 }
 
+
+}
 :target {
     scroll-margin-top: .8em;
 }
-
 body::-webkit-scrollbar {
     width: 12px;
 }
-
 body::-webkit-scrollbar-track {
     background: #B500FC;
 }
-
 body::-webkit-scrollbar-thumb {
     background-color: #350F61;
     border-radius: 5px;
     border: 3px solid #B500FC;
 }
-
 body {
     margin: 0px;
     color: aliceblue;
@@ -32,75 +41,69 @@ body {
     /* background: rgb(91, 27, 170);
     background: linear-gradient(90deg, rgba(91, 27, 170, 1) 17%, rgba(0, 151, 255, 1) 100%); */
 }
-
 header {
     display: flex;
     align-items: center;
     /* background-color: rgb(4, 30, 30); */
-    color: aliceblue;
+    
+    color: #1c67a9;
     width: 95%;
     padding: 0px 10px 0px 10px;
     margin: 30px auto 0px auto;
+    text-align: center;
 }
-
 header h1 {
     flex: 1;
-    margin-left: 20px;
-    font-size: 12pt;
+    font-size: 16pt;
+    text-align: left;
+    padding-left: 30px;
 }
-
 header ul {
     list-style: none;
-    margin-right: 20px;
+    font-size: 14pt;
+    padding-right: 30px;
     color: #fff;
 }
-
 header a {
     text-decoration: none;
     color: #fff;
 }
-
 @keyframes underline-piscando {
     from {
         opacity: 0%;
     }
+    
     to {
         opacity: 100%;
     }
 }
-
 .underline {
     animation-name: underline-piscando;
     animation-duration: .8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-
 .parte1 {
     display: flex;
     width: 95%;
     margin: 120px auto 200px;
 }
-
 .parte1 .texto h1 {
     margin: 10px 0px;
     font-weight: 100;
     font-size: 30pt;
     font-weight: bold;
 }
-
 .parte1 .texto h2 {
     color: #e7aaff;
     margin: 0px;
     font-weight: 700;
     font-size: 16pt;
 }
-
 .parte1 .texto {
     flex: 1;
     padding: 30px;
 }
-
 .parte1 .parte1-img {
     flex: 1;
     text-align: center;
@@ -108,25 +111,32 @@ header a {
     color: #fff;
 }
 
-
 /****************************************************/
-
 @media (max-width: 600px) {
+    html {
+        background: rgb(108, 0, 150);
+        background: linear-gradient(90deg, rgba(108, 0, 150, 1) 0%, rgba(183, 0, 255, 1) 100%);
+    }
+    
     header {
         flex-direction: column;
     }
+    
     .parte1 {
         margin-top: 0px;
         margin-bottom: 0px;
         flex-direction: column;
     }
+    
     .parte1 .parte1-img {
+        display: none;
         flex: 1;
         text-align: center;
         font-size: 100pt;
         color: #fff;
         margin: 0px;
     }
+    
     html {
         scroll-behavior: auto;
     }

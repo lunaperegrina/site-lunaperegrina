@@ -1,0 +1,17 @@
+footer {
+    background-color: #fff;
+    padding: 30px;
+    margin: 0px;
+    /* height: 100px; */
+    text-align: center;
+}
+
+footer p {
+    background-image: linear-gradient(90deg, #f06161 0%, #b700ff 100%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+    font-size: large;
+}
