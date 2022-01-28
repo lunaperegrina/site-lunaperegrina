@@ -23,7 +23,7 @@
 .card {
     border-radius: 10px;
     background-color: rgb(255, 248, 219, 0.2);
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
 }
 
 .card:hover {}
@@ -31,19 +31,20 @@
 .card-image {
     /* height: em; */
     /* width: 80%; */
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     padding: 10px;
-    margin: 1px;
+    /* margin: 10px; */
     border-radius: 10px;
     background-color: aliceblue;
 }
 
-.card h2,
+
+/* .card h2,
 .card p {
     padding-left: 10px;
     padding-right: 10px;
-}
+} */
 
 
 /******************************************************/

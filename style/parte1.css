@@ -19,7 +19,7 @@ html {
     /* font-family: 'Raleway'; */
     background: rgb(50, 15, 93);
     /* background: linear-gradient(90deg, #f06161 0%, #b700ff 100%); */
-    background: linear-gradient(90deg, rgba(50, 15, 93, 1) 0%, rgba(183, 0, 255, 1) 100%);
+    background: linear-gradient(90deg, #320f5d 0%, #b700ff 100%);
 }
 
 :target {
@@ -141,8 +141,10 @@ header a {
 
 @media (max-width: 600px) {
     html {
-        background: rgb(108, 0, 150);
-        background: linear-gradient(90deg, rgba(108, 0, 150, 1) 0%, rgba(183, 0, 255, 1) 100%);
+        /* background: rgb(108, 0, 150);
+        background: linear-gradient(90deg, rgba(108, 0, 150, 1) 0%, rgba(183, 0, 255, 1) 100%); */
+        background: rgb(50, 15, 93);
+        background: linear-gradient(90deg, #320f5d 0%, #850bc6 100%);
     }
     header {
         flex-direction: column;
@@ -165,5 +167,13 @@ header a {
     }
     html {
         scroll-behavior: auto;
+    }
+    body::-webkit-scrollbar-track {
+        background: #850bc6;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #320f5d;
+        border-radius: 5px;
+        border: 3px solid #850bc6;
     }
 }
