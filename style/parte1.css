@@ -38,9 +38,8 @@ header {
     align-items: center;
     /* background-color: rgb(4, 30, 30); */
     color: aliceblue;
-    padding: 0px 10px 0px 10px;
-    display: flex;
     width: 95%;
+    padding: 0px 10px 0px 10px;
     margin: 30px auto 0px auto;
 }
 
@@ -111,3 +110,21 @@ header a {
 
 
 /****************************************************/
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    .parte1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .parte1 .parte1-img {
+        flex: 1;
+        text-align: center;
+        font-size: 100pt;
+        color: #fff;
+        margin: 0px;
+    }
+}
