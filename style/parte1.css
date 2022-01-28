@@ -105,7 +105,7 @@ header a {
 }
 
 .parte1 .texto h1 {
-    margin: 10px 0px;
+    margin: 0px;
     font-weight: 100;
     font-size: 30pt;
     font-weight: bold;
@@ -121,6 +121,10 @@ header a {
 .parte1 .texto {
     flex: 1;
     padding: 30px;
+}
+
+.parte1 .texto p {
+    margin-top: 35px;
 }
 
 .parte1 .parte1-img {
