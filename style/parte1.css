@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
+    position: relative;
     margin: 0px;
     color: aliceblue;
     /* background-color: black; */
@@ -98,6 +99,7 @@ header a {
 }
 
 .parte1 {
+    position: relative;
     display: flex;
     width: 95%;
     margin: 120px auto 200px;
