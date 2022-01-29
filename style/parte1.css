@@ -141,6 +141,9 @@ header a {
     .parte1 .parte1-img {
         display: none;
     }
+    .parte1 {
+        margin: 50px auto 50px;
+    }
 }
 
 @media (max-width: 600px) {

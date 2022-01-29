@@ -26,9 +26,17 @@
     background-color: rgb(255, 248, 219, 0.2);
     color: #fff;
     /* padding: 20px; */
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+    width: 280px;
 }
 
-.card:hover {}
+.card:hover {
+    /* position: relative; */
+    top: -15px;
+    box-shadow: 0 0px 2em #9842ba;
+}
 
 .card-image {
     height: 250px;
@@ -70,6 +78,20 @@
     padding: 5px 25px 25px 25px;
 }
 
+.card-texto ul li {
+    margin-top: 5px;
+}
+
+.card .api {
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    margin: 0px;
+    background-color: rgb(147, 255, 147);
+}
+
 
 /******************************************************/
 
@@ -84,6 +106,7 @@
     .projetos {
         grid-template-columns: 1fr;
         width: 300px;
+        margin-bottom: 100px;
     }
 }
 
@@ -97,9 +120,59 @@
 
 /******************************************************/
 
-.card:hover {
+.container {
+    text-align: center;
+}
+
+.glitch {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
     position: relative;
-    top: -15px;
-    transition: all .3s;
-    box-shadow: 0 0px 2em #9842ba;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+}
+
+.glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+}
+
+.glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+    }
+    99% {
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+    }
+    100% {
+        text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
+    }
 }
