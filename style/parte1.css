@@ -55,7 +55,8 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    /* background-color: rgb(4, 30, 30); */
+    /* background-color: rgb(255, 248, 219, 0.1); */
+    /* backdrop-filter: blur(3px); */
     color: #1c67a9;
     width: 95%;
     padding: 0px 10px 0px 10px;

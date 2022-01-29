@@ -21,15 +21,29 @@
 }
 
 .card {
+    align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
-    background-color: rgb(255, 248, 219, 0.2);
+    /* background-color: rgb(255, 248, 219, 0.1);
+    backdrop-filter: blur(3px); */
     color: #fff;
     /* padding: 20px; */
     position: relative;
     top: 0;
     transition: all .2s ease-in-out;
     width: 280px;
+    margin: auto;
+}
+
+.card {
+    background-color: rgb(255, 248, 219, 0.1);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .card {
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
 }
 
 .card:hover {
