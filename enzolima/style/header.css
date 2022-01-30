@@ -8,8 +8,10 @@ html {
 header {
     display: flex;
     height: 100px;
+    width: 1200px;
     align-items: center;
-    margin: 0px 54px 0px 54px;
+    margin: 0px auto;
+    padding: 0px 54px;
     justify-content: space-between;
 }
 

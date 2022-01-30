@@ -9,7 +9,7 @@ footer {
 
 footer p {
     background-image: linear-gradient(90deg, #f06161 0%, #b700ff 100%);
-    color: black;
+    /* color: black; */
     background-clip: text;
     -webkit-background-clip: text;
     /* Adicionado: */

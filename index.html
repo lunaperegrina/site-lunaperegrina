@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/masonry.pkgd.min.js"></script>
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/parte1.css">
     <link rel="stylesheet" href="style/parte2.css">
@@ -14,14 +15,26 @@
     <link rel="stylesheet" href="style/background.css">
     <link rel="shortcut icon" type="imagex/png" href="images/win-icon.svg">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <title>Pedro Peregrina</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB6090JP52"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QB6090JP52');
+    </script>
+    <title>pedroperegrinaa</title>
 </head>
 
 <!-- <p style="text-align: center;"> <span style="color: #e7aaff;">// </span>site em desenvolvimento</p> -->
 <!-- <p style="text-align: center;"> <span style="color: #e7aaff;">/</span>Linkedin <span style="color: #e7aaff;">/</span>GiHhub</p> -->
 
 <div id="particles-js" style="position: absolute; z-index: 0; height: 100%; width: 100%;"></div>
-<script src="particles.js"></script>
+<script src="scripts/particles.js"></script>
 <header>
     <!-- <h1> <a href="#"><span style="color: #e7aaff;">&lt;/</span>&nbspPedro Peregrina&nbsp<span style="color: #e7aaff;">></span></a> </h1> -->
     <h1> <a href="#"><span style="color: #e7aaff;">&lt;/></span></a> </h1>
@@ -57,12 +70,13 @@
     <section class="parte2 ">
 
         <h1 class="typing">Projetos<span class="underline">_</span></h1>
-        <div class="projetos ">
-            <a href="./website-codar/index.html ">
-                <div class="card ">
-                    <img src="images/codar.png " class="card-image ">
+
+        <div class="projetos" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10, "gutter": 20}'>
+            <a class="grid-item" href="./website-codar/index.html">
+                <div class="card">
+                    <img src="images/codar.png " class="card-image">
                     <div class="card-texto ">
-                        <h2> Codar: Website criativo!</h2>
+                        <h2>Website: Codar.</h2>
                         <p>View de um website que presta serviços de desenvolvimento web.</p>
                         <ul>
                             <li style="background-color: #DD4B25; ">HTML</li>
@@ -71,8 +85,8 @@
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/pedroperegrinaa/task-manager-cli ">
-                <div class="card ">
+            <a class="grid-item" href="https://github.com/pedroperegrinaa/task-manager-cli">
+                <div class="card">
                     <img src="images/task-cli.png " class="card-image ">
                     <div class="card-texto ">
                         <h2>task-manager-cli: gerencie tarefas como um nerd</h2>
@@ -84,8 +98,8 @@
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/pedroperegrinaa/CRUD-alunos-com-imagens ">
-                <div class="card ">
+            <a class="grid-item" href="https://github.com/pedroperegrinaa/CRUD-alunos-com-imagens">
+                <div class="card">
                     <p class="card-image api ">><span class="underline ">_</span></p>
                     <div class="card-texto ">
                         <h2>API: Alunos e Admins</h2>
@@ -95,6 +109,19 @@
                             <li style="background-color: #ffffff; color: #000; ">Express</li>
                             <li style="background-color: #35bcf7; color: rgb(255, 255, 255); ">MySQL</li>
                             <li style="background-color: #D63AFF; color: #FFF; ">JWT</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a class="grid-item" href="#">
+                <div class="card">
+                    <img src="images/enzolima.svg" class="card-image">
+                    <div class="card-texto ">
+                        <h2>Website: enzolima</h2>
+                        <p>Website de um dos melhores designers que conheço! (pronto Enzo, já disse o que você queria. Agora solta a minha familia pf)</p>
+                        <ul>
+                            <li style="background-color: #DD4B25; ">HTML</li>
+                            <li style="background-color: #254BDD; ">CSS</li>
                         </ul>
                     </div>
                 </div>
@@ -126,7 +153,7 @@
 
 
 <footer>
-    <p>Feito com ❤ por @pedroperegrinaa</p>
+    <p>Feito com ❤ por @pedroperegrinaa<span class="underline-footer">_</span></p>
 </footer>
 
 </html>

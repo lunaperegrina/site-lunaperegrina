@@ -1,0 +1,10 @@
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 210px;
+    background-color: #000;
+}
+
+.section h1 {
+    color: #fff;
+}
