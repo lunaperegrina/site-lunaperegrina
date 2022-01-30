@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Hermit';
+    src: url('../font-hermit/hermit-regular-webfont.woff') format('woff')
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Hermit';
+    background: rgb(50, 15, 93);
+    background: linear-gradient(90deg, #320f5d 0%, #b700ff 100%);
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #B500FC;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #350F61;
+    border-radius: 5px;
+    border: 3px solid #B500FC;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    color: aliceblue;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #1c67a9;
+    width: 95%;
+    padding: 0px 10px 0px 10px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 16pt;
+    text-align: left;
+    padding-left: 30px;
+}
+
+header ul {
+    list-style: none;
+    font-size: 14pt;
+    padding-right: 30px;
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/****************************************************************/
+
+@media (max-width: 600px) {
+    html {
+        background: rgb(50, 15, 93);
+        background: linear-gradient(90deg, #320f5d 0%, #850bc6 100%);
+    }
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        padding-left: 0px;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+    body::-webkit-scrollbar-track {
+        background: #850bc6;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #320f5d;
+        border-radius: 5px;
+        border: 3px solid #850bc6;
+    }
+}

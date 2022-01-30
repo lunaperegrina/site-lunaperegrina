@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body,
+html {
+    margin: 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 0px 54px 0px 54px;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+header .sobre-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    header .sobre-redes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+header .sobre-redes .sobre {
+    align-items: center;
+    margin-right: 62px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+header ul li {
+    padding-left: 10px;
+    list-style: none;
+}
+
+#be {
+    padding: 0px;
+}

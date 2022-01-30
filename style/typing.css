@@ -1,0 +1,39 @@
+/* .typing {
+    border: 2px solid #111;
+    animation: typing 2s steps(16) normal, underline infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px auto 30px;
+}
+
+@keyframes typing {
+    from {
+        width: 0em;
+    }
+    to {
+        width: 10em;
+    }
+} */
+
+.underline {
+    animation-name: underline-piscando;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes underline-piscando {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+
+/* @media (max-width: 600px) {
+    .typing {
+        white-space: pre;
+    }
+} */

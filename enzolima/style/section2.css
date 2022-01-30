@@ -1,0 +1,10 @@
+.parte2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 120px auto 0px auto;
+    width: 1200px;
+}
+
+.parte2 div {
+    height: 295px;
+}

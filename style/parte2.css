@@ -11,8 +11,6 @@
     gap: 20px;
     width: 880px;
     margin: 0px auto;
-    /* text-align: center; */
-    /* backdrop-filter: blur(200px); */
     margin-bottom: 200px;
 }
 
@@ -21,18 +19,15 @@
 }
 
 .card {
-    align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
-    /* background-color: rgb(255, 248, 219, 0.1);
-    backdrop-filter: blur(3px); */
     color: #fff;
-    /* padding: 20px; */
-    position: relative;
     top: 0;
     transition: all .2s ease-in-out;
     width: 280px;
     margin: auto;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 .card {
@@ -47,7 +42,7 @@
 }
 
 .card:hover {
-    /* position: relative; */
+    position: relative;
     top: -15px;
     box-shadow: 0 0px 2em #9842ba;
 }
