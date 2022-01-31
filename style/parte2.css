@@ -3,6 +3,7 @@
     color: aliceblue;
     font-weight: bold;
     font-size: 24pt;
+    margin-top: 150px;
 }
 
 .projetos {
@@ -22,9 +23,7 @@
     color: #fff;
     width: 280px;
     margin: 0px auto;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .card {
@@ -39,8 +38,7 @@
 }
 
 .card:hover {
-    position: relative;
-    top: -15px;
+    transform: scale(1.03);
     box-shadow: 0 0px 2em #9842ba;
 }
 
@@ -102,6 +100,9 @@
 /******************************************************/
 
 @media (max-width:900px) {
+    .parte2 h1 {
+        margin-top: 0px;
+    }
     .projetos {
         grid-template-columns: repeat(2, 1fr);
         width: 580px;

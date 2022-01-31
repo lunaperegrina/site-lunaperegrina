@@ -1,9 +1,9 @@
 .carregando {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #320f5d;
     color: aliceblue;
-    animation: fadeout 4s;
+    animation: fadeout 2s;
     opacity: 0%;
     position: absolute;
     z-index: 4;
@@ -16,30 +16,7 @@
     60% {
         opacity: 100%;
     }
-    100% {
-        opacity: 0%;
-    }
-}
-
-.carregando h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    /* overflow: hidden; */
-    font-size: 90px;
-    opacity: 0%;
-    animation: fade-h1 4s;
-    border-right: 2px solid #fff;
-    /* animation: barra-piscando infinite 4s; */
-}
-
-@keyframes fade-h1 {
-    0% {
-        opacity: 0px;
-    }
-    30% {
+    80% {
         opacity: 100%;
     }
     100% {
@@ -47,11 +24,47 @@
     }
 }
 
-@keyframes barra-piscando {
+.carregando h1 {
+    overflow: hidden;
+    margin: 40vh auto;
+    text-align: center;
+    font-size: 90px;
+    /* width: 220px; */
+    height: 105px;
+    opacity: 0%;
+    /* border-right: 2px solid #fff; */
+    animation: fade-in-out-h1 2s, borda-piscando infinite 4s, nome-aparecendo .4s steps(4);
+}
+
+@keyframes fade-in-out-h1 {
+    0% {
+        opacity: 0px;
+    }
+    30% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes borda-piscando {
     from {
-        border-right: none;
+        border-right: 2px solid rgb(255, 255, 255);
     }
     to {
-        border-right: 2px solid #fff;
+        border-right: 2px solid rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes nome-aparecendo {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 220px;
     }
 }
