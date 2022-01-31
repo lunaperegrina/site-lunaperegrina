@@ -4,6 +4,16 @@
     width: 95%;
     margin: 120px auto 200px;
     align-items: center;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .parte1 .texto h1 {

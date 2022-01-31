@@ -3,4 +3,18 @@
         height: 100%;
         position: absolute;
         z-index: 0;
+        opacity: 0.5;
+    }
+    
+    .tenta-aqui {
+        animation: fadein 20s;
+    }
+    
+    @keyframes fadein {
+        from {
+            opacity: 0.0;
+        }
+        to {
+            opacity: 1;
+        }
     }

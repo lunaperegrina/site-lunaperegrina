@@ -7,6 +7,18 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+    /* animation: desativar-rolagem 12s; */
+}
+
+@keyframes desativar-rolagem {
+    from {
+        height: 100%;
+        overflow-y: hidden;
+    }
+    to {
+        height: 100%;
+        overflow-y: visible;
+    }
 }
 
 html {
@@ -15,6 +27,9 @@ html {
     background: rgb(50, 15, 93);
     background: linear-gradient(90deg, #320f5d 0%, #b700ff 100%);
 }
+
+
+/******************** BARRA DE ROLAGEM PERSONALIZADA *********************/
 
 :target {
     scroll-margin-top: .8em;
@@ -33,6 +48,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     border: 3px solid #B500FC;
 }
+
+
+/******************************************************************************/
 
 body {
     position: relative;
