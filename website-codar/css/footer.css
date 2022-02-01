@@ -1,0 +1,46 @@
+.footer {
+    background-color: #000;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 200px auto 200px auto; */
+    padding: 40px 20px 50px 20px;
+    margin: 0px;
+}
+
+.info {
+    padding: 0px 20px 0px 20px;
+}
+
+.footer-icon {
+    margin-right: 20px;
+    height: 30px;
+}
+
+
+/*********************************************************************************/
+
+@media (max-width: 760px) {
+    .dois-cards {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin: 10px;
+    }
+    .footer {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .footer-icon {
+        height: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-icon {
+        height: 20px;
+    }
+}
