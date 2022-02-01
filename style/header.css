@@ -10,6 +10,16 @@ body {
     /* animation: desativar-rolagem 12s; */
 }
 
+@-moz-document url-prefix() {
+    html,
+    body {
+        /* height: 100%; */
+        max-width: 100%;
+        overflow-x: visible;
+        /* animation: desativar-rolagem 12s; */
+    }
+}
+
 @keyframes desativar-rolagem {
     from {
         height: 100%;
@@ -92,6 +102,10 @@ header a {
 /****************************************************************/
 
 @media (max-width: 600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     html {
         background: rgb(50, 15, 93);
         background: linear-gradient(90deg, #320f5d 0%, #850bc6 100%);
