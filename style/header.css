@@ -74,10 +74,11 @@ header {
     padding: 0px 10px 0px 10px;
     margin: 30px auto 0px auto;
     text-align: center;
+    justify-content: space-between;
 }
 
-header h1 {
-    flex: 1;
+header .home-icon {
+    /* flex: 1; */
     font-size: 16pt;
     text-align: left;
     padding-left: 30px;
@@ -110,7 +111,7 @@ header a {
     header {
         flex-direction: column;
     }
-    header h1 {
+    header .home-icon {
         padding-left: 0px;
     }
     html {
