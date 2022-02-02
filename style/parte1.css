@@ -20,14 +20,14 @@ body {
     }
 }
 
-.parte1 .texto h1 {
+.parte1 .texto h2 {
     margin: 0px;
     font-weight: 100;
     font-size: 30pt;
     font-weight: bold;
 }
 
-.parte1 .texto h2 {
+.parte1 .texto h3 {
     color: #e7aaff;
     margin: 0px;
     font-weight: 700;

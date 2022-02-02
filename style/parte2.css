@@ -1,4 +1,4 @@
-.parte2 h1 {
+.parte2 h2 {
     text-align: center;
     color: aliceblue;
     font-weight: bold;
@@ -72,7 +72,7 @@
     font-weight: 100;
 }
 
-.card h2 {
+.card h3 {
     /* margin-top: 5px; */
     margin-bottom: 0px;
     font-size: 18px;
@@ -100,7 +100,7 @@
 /******************************************************/
 
 @media (max-width:900px) {
-    .parte2 h1 {
+    .parte2 h2 {
         margin-top: 0px;
     }
     .projetos {
