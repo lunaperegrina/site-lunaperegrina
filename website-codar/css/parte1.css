@@ -54,3 +54,20 @@
         margin: 10px 10%;
     }
 }
+
+@media (max-width: 600px) {
+    .parte1-title {
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .image-videocall {
+        height: 100%;
+        width: 95%;
+    }
+    .parte1 .button-red {
+        margin: 0px;
+    }
+}
