@@ -1,8 +1,8 @@
 .header {
     display: flex;
-    /* background-color: #333; */
     align-items: center;
     font-size: 18pt;
+    justify-content: space-around;
 }
 
 @media (max-width:900px) {
@@ -13,12 +13,11 @@
 }
 
 .titulo-header {
-    /* background-color: #666; */
     margin-left: 20px;
     color: #D6000D;
     font-style: italic;
     font-weight: 700;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .ponto-codar {
@@ -32,7 +31,6 @@
 }
 
 .ul-nav {
-    /* background-color: #aaa; */
     list-style: none;
     display: flex;
     flex-direction: row;

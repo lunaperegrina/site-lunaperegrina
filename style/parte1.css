@@ -111,3 +111,9 @@ body {
         margin: 0px;
     }
 }
+
+@media (max-width: 300px) {
+    .parte1 .texto {
+        padding: 5%;
+    }
+}

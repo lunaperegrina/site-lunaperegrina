@@ -70,9 +70,12 @@
         grid-template-columns: 1fr;
         width: 95%;
     }
-}
-
-@media (max-width:600px) {
+    .ul-parte2 {
+        margin: 30px auto;
+    }
+    .image-coding {
+        display: none;
+    }
     .ligamos-para-voce {
         width: 95%;
         text-align: center;
@@ -81,14 +84,17 @@
     .ligamos-para-voce h1 {
         margin-bottom: 30px;
     }
-    .ul-parte2 li {
-        white-space: pre-wrap;
-    }
     .ligamos-para-voce .button-red {
         padding: 18px;
         margin-top: 10px;
         width: 300px;
         word-wrap: break-word;
+    }
+}
+
+@media (max-width:600px) {
+    .ul-parte2 li {
+        white-space: pre-wrap;
     }
     .input-celular {
         padding: 18px 30px 18px 30px;

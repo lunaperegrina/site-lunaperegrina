@@ -41,12 +41,16 @@
         width: 95%;
     }
     .parte1-sub {
-        margin: 40px auto 0px auto;
+        margin: 40px auto -10px auto;
+        text-align: center;
     }
     .parte1-textos {
         margin: 0px auto;
     }
     .parte1-title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .parte1 .button-red {
+        margin: 10px 10%;
     }
 }

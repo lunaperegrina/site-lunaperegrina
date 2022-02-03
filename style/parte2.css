@@ -122,4 +122,9 @@
         grid-template-columns: 1fr;
         width: 95%;
     }
+    .card {
+        max-width: 95%;
+        width: auto;
+        height: auto;
+    }
 }
