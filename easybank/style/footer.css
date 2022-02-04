@@ -1,0 +1,30 @@
+footer {
+    background-color: #2d314d;
+}
+
+.grid-footer {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 60px;
+    margin: 0px auto;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.redes ul {
+    display: flex;
+}
+
+.redes ul li {
+    height: 100px;
+    width: 100px;
+    flex-direction: row;
+}

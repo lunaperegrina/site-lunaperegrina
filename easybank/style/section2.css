@@ -1,0 +1,43 @@
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: #f4f5f7;
+    position: relative;
+    z-index: 3;
+    /* padding: 100px; */
+}
+
+.section2 .titulos {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.section2 .titulos h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.section2 .titulos p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.grid-section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.item-grid-item-section2 h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.item-grid-item-section2 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #626262;
+}

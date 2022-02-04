@@ -1,0 +1,12 @@
+body {
+    font-family: 'Outfit';
+    background-color: black;
+    /* color: aliceblue; */
+}
+
+.card {
+    background-color: aliceblue;
+    width: 250px;
+    border-radius: 5px;
+    padding: 20px;
+}

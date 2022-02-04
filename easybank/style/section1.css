@@ -1,0 +1,44 @@
+.section1 {
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.grid-section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.section1 .texto-apresentacao {
+    margin: 200px auto;
+}
+
+.section1 .texto-apresentacao h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: #31354e;
+}
+
+.section1 .texto-apresentacao p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #9c9ca4;
+}
+
+.section1 .bg {
+    position: absolute;
+}
+
+.section1 .bg .bg-intro {
+    position: absolute;
+    z-index: 0;
+    top: -180px;
+    left: 500px;
+}
+
+.section1 .bg .mockups {
+    position: absolute;
+    z-index: 4;
+    left: 700px;
+}
