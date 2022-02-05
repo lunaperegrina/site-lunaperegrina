@@ -11,7 +11,7 @@
 }
 
 .section3 h2 {
-    margin: 0px;
+    margin: 0px 0px -20px 0px;
     font-size: 42px;
     font-weight: 300;
 }
@@ -58,7 +58,7 @@
 
 .card-section3 p {
     font-size: 14px;
-    color: #888;
+    color: #717171;
     font-weight: 300;
     margin: 10px 0px;
 }

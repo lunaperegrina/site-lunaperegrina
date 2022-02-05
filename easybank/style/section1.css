@@ -18,12 +18,14 @@
     font-size: 70px;
     font-weight: 400;
     color: #31354e;
+    margin-bottom: 0px;
 }
 
 .section1 .texto-apresentacao p {
     font-size: 20px;
     font-weight: 400;
-    color: #9c9ca4;
+    color: #717171;
+    margin: 40px 0px;
 }
 
 .section1 .bg {

@@ -5,12 +5,13 @@
     background-color: #f4f5f7;
     position: relative;
     z-index: 3;
+    margin-top: -50px;
     /* padding: 100px; */
 }
 
 .section2 .titulos {
     width: 1200px;
-    margin: 0px auto;
+    margin: 60px auto 0px auto;
 }
 
 .section2 .titulos h2 {
