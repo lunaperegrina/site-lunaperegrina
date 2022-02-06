@@ -6,7 +6,7 @@
 .grid-section1 {
     display: grid;
     grid-template-columns: repeat(2, 600px);
-    width: 1200px;
+    width: 1150px;
     margin: 0px auto;
 }
 

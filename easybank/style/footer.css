@@ -5,6 +5,7 @@ footer {
 footer a {
     color: aliceblue;
     text-decoration: none;
+    width: 100%;
 }
 
 footer a:hover {
@@ -17,27 +18,21 @@ footer ul li {
 
 .grid-footer {
     display: grid;
-    width: 1200px;
+    width: 1150px;
     grid-template-columns: 1fr 0.5fr 1.5fr 1fr;
-    padding: 40px;
+    padding: 40px 0px;
     margin: 0px auto;
-}
-
-.redes {
-    padding: 8px;
-    text-align: center;
 }
 
 .redes ul {
     display: flex;
     padding: 0px;
-    justify-content: center;
     margin-top: 40px;
 }
 
 .redes ul li {
     flex-direction: row;
-    padding: 0px 6px;
+    padding: 0px 5px;
 }
 
 .links-internos ul {

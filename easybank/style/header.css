@@ -12,7 +12,6 @@ header {
     display: flex;
     justify-content: space-around;
     height: 50px;
-    /* position: -webkit-sticky; */
     position: fixed;
     top: 0px;
     z-index: 5;
@@ -31,47 +30,24 @@ header nav ul {
     list-style-type: none;
     padding: 0px;
     margin-top: 0px;
-}
-
-header nav ul li {
-    align-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 400;
-    color: #717171;
     height: 50px;
 }
 
-header nav ul li:hover {
+header nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    align-content: center;
+    color: #717171;
+    height: 50px;
+    font-weight: 400;
+    position: relative;
+    top: 15px;
+}
+
+header nav ul li a:hover {
     color: #111111;
 }
-
-header nav ul li .tracinho {
-    height: 4px;
-    position: relative;
-    top: 10px;
-    background-color: none;
-}
-
-header nav ul li .tracinho:hover {
-    color: #111111;
-    animation: sobe-tracinho 0s both
-}
-
-@keyframes sobe-tracinho {
-    0% {
-        background-image: none;
-    }
-    100% {
-        background-image: linear-gradient(90deg, #31d35c, #2bb7da);
-    }
-}
-
-
-/* header nav ul li:hover {
-    transition: all 1s;
-    position: relative;
-    top: 44px;
-    height: 5px;
-    background-image: linear-gradient(90deg, #31d35c, #2bb7da);
-} */
