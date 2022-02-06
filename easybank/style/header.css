@@ -51,3 +51,12 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #111111;
 }
+
+@media (max-width: 900px) {
+    header nav ul {
+        display: none;
+    }
+    header input {
+        display: none;
+    }
+}

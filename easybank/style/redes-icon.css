@@ -1,0 +1,37 @@
+.redes-icon {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+#facebook {
+    background-image: url(../images/icon-facebook.svg);
+}
+
+#youtube {
+    background-image: url(../images/icon-youtube.svg);
+}
+
+#twitter {
+    background-image: url(../images/icon-twitter.svg);
+}
+
+#pinterest {
+    background-image: url(../images/icon-pinterest.svg);
+}
+
+#instagram {
+    background-image: url(../images/icon-instagram.svg);
+}
+
+@media (max-width: 600px) {
+    .redes-icon {
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+        margin: 0px 4px;
+    }
+}
