@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.header {
     width: 100%;
     padding: 15px 0px 15px 0px;
     display: flex;
@@ -18,12 +18,12 @@ header {
     background-color: #FFFFFF;
 }
 
-header img {
+.header img {
     align-self: center;
     height: 20px;
 }
 
-header nav ul {
+.nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,12 +33,12 @@ header nav ul {
     height: 50px;
 }
 
-header nav ul li {
+.nav-menu .nav-item {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-header nav ul li a {
+.nav-menu .nav-item a {
     text-decoration: none;
     align-content: center;
     color: #717171;
@@ -48,15 +48,64 @@ header nav ul li a {
     top: 15px;
 }
 
-header nav ul li a:hover {
+.nav-menu .nav-item a:hover {
     color: #111111;
 }
 
+
+/* HAMBURGUER MENU */
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.bar {
+    align-self: center;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 @media (max-width: 900px) {
-    header nav ul {
+    .header input {
         display: none;
     }
-    header input {
-        display: none;
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+        height: 500px;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
