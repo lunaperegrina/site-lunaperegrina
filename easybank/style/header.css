@@ -62,7 +62,6 @@ body {
 }
 
 .bar {
-    align-self: center;
     display: block;
     width: 25px;
     height: 3px;
@@ -98,6 +97,7 @@ body {
     .hamburger {
         display: block;
         cursor: pointer;
+        margin: 15px auto;
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
