@@ -77,22 +77,25 @@ body {
     }
     .nav-menu {
         position: fixed;
-        left: -100%;
+        z-index: 1;
+        left: -200%;
         top: 5rem;
         flex-direction: column;
+        justify-content: space-evenly;
         background-color: #fff;
-        width: 100%;
+        width: 80%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        /* box-shadow: 0px 50px 10em rgba(0, 0, 0, .5); */
+        margin: 20px 10%;
     }
     .nav-menu.active {
         left: 0;
-        height: 500px;
+        height: 300px;
     }
-    .nav-item {
-        margin: 2.5rem 0;
+    .nav-menu .nav-item a {
+        top: 0px;
     }
     .hamburger {
         display: block;
