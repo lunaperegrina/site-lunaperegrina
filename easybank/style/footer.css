@@ -67,6 +67,7 @@ footer ul li {
     .grid-footer {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 40px 0px;
     }
     .redes ul {
         margin: 30px;
@@ -83,7 +84,7 @@ footer ul li {
         margin: 0px auto 20px auto;
     }
     .final {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         text-align: center;
     }
 }
