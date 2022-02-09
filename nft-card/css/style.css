@@ -82,6 +82,18 @@ section p span {
     border: 1px solid #EEE;
 }
 
-.creator p span {
+.creator img:hover {
+    border: 1px solid #00fff7;
+}
+
+.creator p {
     color: #8bacda;
+}
+
+.creator p span {
+    color: #EEE;
+}
+
+.creator p span:hover {
+    color: #00fff7;
 }

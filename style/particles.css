@@ -7,7 +7,7 @@
     }
     
     .tenta-aqui {
-        animation: fadein 20s;
+        animation: fadein 2s;
     }
     
     @keyframes fadein {
