@@ -1,0 +1,13 @@
+{
+    "eu": {
+        "nome": "Pedro Peregrina",
+        "idade": 19
+    },
+    "tecnologias": ["HTML", "CSS", "JavaScript", "Node.js", "Flutter"],
+    "hobbies": {
+        "arte2D": "desenho-tradicional",
+        "arte3D": ["Blender", "Substance Painter"],
+        "musica": "FL Studio"
+    },
+    "desejo": "Ajudar as pessoas, melhorar o mundo e deixar um legado com tecnologia."
+}

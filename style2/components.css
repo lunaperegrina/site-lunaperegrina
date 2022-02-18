@@ -1,0 +1,9 @@
+.glass {
+    background: linear-gradient(170deg, rgba(186, 186, 186, 0.4) -3.06%, rgba(255, 255, 255, 0) 105.05%);
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-shadow: 10px 5px 1.5em rgba(66, 66, 66, 0.15);
+}
