@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="style/carregando.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/parte1.css">
-    <link rel="stylesheet" href="style/parte2.css">
+    <link rel="stylesheet" href="style/parte2 copy.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/typing.css">
     <link rel="stylesheet" href="style/particles.css">
     <link rel="stylesheet" href="style/background.css">
     <link rel="shortcut icon" type="imagex/png" href="images/win-icon.svg">
-    <script src="contando.js"></script>
-    <script src="scripts/particles.min.js"></script>
+    <!-- <script src="contando.js"></script> -->
+    <!-- <script src="scripts/particles.min.js"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB6090JP52"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB6090JP52"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -59,7 +59,6 @@
 
     <section class="parte1">
         <div class="texto">
-            <!-- <h1>Pedro Peregrina<span class="underline ">_</span></h1> -->
             <h1 class="typing">Pedro Peregrina<span class="underline">_</span></h1>
             <h2>Desenvolvedor ReactJS | NodeJS | Flutter</h2>
 
@@ -78,43 +77,49 @@
 
             </p>
 
-            <!-- <p>Durante a pandemia, pude notar que sou apaixonado por aprender coisas novas. Nesse período em casa, estudei muito sobre
-                <span style="color: orange; ">arte 3D com Blender</span>, comecei a
-                <span style="color: antiquewhite; ">desenhar</span>, aprendi o básico sobre os softwares da
-                <span style="color: #ff8181; ">suíte Adobe</span> e dei uma palinha no
-                <span style="color: greenyellow; ">FL Studio</span>. Após uns meses, percebi que minha verdadeira paixão é o
-                <span style="color: aqua; ">código</span>. Amo a ideia de ter o poder para criar qualquer software e, possivelmente, mudar a vida de alguém com isso. Quero deixar um legado e vou fazer isso com tecnologia. Atualmente venho estudando backend com 
-                <span style="color: #71da68; ">NodeJS</span>, frontend com
-                <span style="color: #61DAFB; ">ReactJS </span> e mobile com
-                <span style="color: #70b3ff ">Flutter</span>.</p> -->
         </div>
-        <!-- <div class="teste-flex">
-            <div class="teste"> <img class="parte1-img" src="images/pedroperegrinaa.jpg"></div>
-        </div> -->
-
         <img class="parte1-img" src="images/pedroperegrina piercing.jpg" alt="Foto de Pedro Peregrina">
     </section>
 
     <section class="parte2 ">
 
-        <h2 class="typing">Projetos<span class="underline">_</span></h2>
+        <h1 class="typing">Projetos<span class="underline">_</span></h1>
 
         <div class="projetos"
-            data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10, "gutter": 20, "horizontalOrder":true}'>
-            <a class="grid-item" href="./easybank/index.html" target="_blank">
+            data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10, "gutter": 52, "horizontalOrder":true}'>
+
+
+            <div class="grid-item">
                 <div class="card">
-                    <img src="images/easybank.png" alt="logo do site Easybank, um dos projetos" class="card-image">
-                    <div class="card-texto ">
-                        <h3>Easybank: Next generation of banking!</h3>
-                        <p>Landing page de um banco de próxima geração!</p>
-                        <ul>
-                            <li style="background-color: #DD4B25;">HTML</li>
-                            <li style="background-color: #254BDD;">CSS</li>
-                        </ul>
+                    <div class="card-texto">
+                        <h2>01</h2>
+                        <h3>Easybank</h3>
+                        <p>Landing page de um banco de próxima geração! </p>
                     </div>
+                    <ul>
+                        <li><img src="images/icons/icon-html5.png" alt="" style="width: 24px"></li>
+                        <li><img src="images/icons/icon-css3.png" alt="" style="width: 24px"></li>
+                    </ul>
+                    <a href="./easybank/index.html"><button class="button-ver">Ver</button></a>
                 </div>
-            </a>
-            <a class="grid-item" href="https://github.com/pedroperegrinaa/CRUD-alunos-com-imagens" target="_blank">
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <div class="card-texto">
+                        <h2>01</h2>
+                        <h3>Easybank</h3>
+                        <p>Landing page de um banco de próxima geração! </p>
+                    </div>
+                    <ul>
+                        <li><img src="images/icons/icon-html5.png" alt="" style="width: 24px"></li>
+                        <li><img src="images/icons/icon-css3.png" alt="" style="width: 24px"></li>
+                    </ul>
+                    <input href="./easybank/index.html" class="button-ver" type="button" value="Ver">
+                </div>
+            </div>
+
+            <!-- <a class="grid-item" href="https://github.com/pedroperegrinaa/CRUD-alunos-com-imagens" target="_blank">
                 <div class="card">
                     <p class="card-image api">><span class="underline ">_</span></p>
                     <div class="card-texto ">
@@ -140,24 +145,11 @@
                             Novas funcionalidades serão adicionadas futuramente.</p>
                         <ul>
                             <li style="background-color: #53b14b; ">NodeJS</li>
-
                         </ul>
                     </div>
                 </div>
             </a>
-            <!-- <a class="grid-item" href="./website-codar/index.html" target="_blank">
-                <div class="card">
-                    <img src="images/codar.png" alt="logo do site Codar, um dos projetos" class="card-image">
-                    <div class="card-texto ">
-                        <h3>Codar.</h3>
-                        <p>Landing page de um prestador de serviços envolvendo desenvolvimento web</p>
-                        <ul>
-                            <li style="background-color: #DD4B25;">HTML</li>
-                            <li style="background-color: #254BDD;">CSS</li>
-                        </ul>
-                    </div>
-                </div>
-            </a> -->
+
             <a class="grid-item" href="./nft-card/index.html" target="_blank">
                 <div class="card">
                     <img src="images/image-equilibrium.jpg" alt="foto que representa o projeto Card NFT"
@@ -172,6 +164,7 @@
                     </div>
                 </div>
             </a>
+
             <a class="grid-item" href="https://pedroperegrinaa.github.io/react-lista-telefonica/" target="_blank">
                 <div class="card">
                     <img src="images/agenda-icone.jpg" alt="foto que representa uma agenda telefonica"
@@ -187,6 +180,7 @@
                     </div>
                 </div>
             </a>
+
             <a class="grid-item" href="https://pedroperegrinaa.github.io/react-playlist-graphic/" target="_blank">
                 <div class="card">
                     <img src="images/icon-grafico.png" alt="foto que representa um grafico" class="card-image">
@@ -200,6 +194,7 @@
                     </div>
                 </div>
             </a>
+
             <a class="grid-item" href="https://github.com/pedroperegrinaa/twitter-stalker/" target="_blank">
                 <div class="card">
                     <img src="images/icons/icon-twitter-stalker.svg" alt="foto que representa um grafico"
@@ -213,36 +208,26 @@
                         </ul>
                     </div>
                 </div>
-            </a>
-            <!-- <a class="grid-item" href="./enzolima/index.html" target="_blank">
-                <div class="card">
-                    <img src="images/enzolima.svg" alt="logo do site enzo lima, um dos projetos." class="card-image">
-                    <div class="card-texto ">
-                        <h3>Website: enzolima</h3>
-                        <p>Website de um dos melhores designers que conheço! (pronto Enzo, já disse o que você queria. Agora solta a minha familia pf)</p>
-                        <ul>
-                            <li style="background-color: #DD4B25; ">HTML</li>
-                            <li style="background-color: #254BDD; ">CSS</li>
-                        </ul>
-                    </div>
-                </div>
             </a> -->
 
-            <!-- <div class="card " style="height: 446px; display: flex; align-items: center; justify-content: center; ">
-                <div class="container ">
-                    <p class="glitch " style="font-size: 22px; ">
-                        Desenvolvendo...
-                    </p>
-                </div>
-            </div> -->
         </div>
     </section>
 </body>
+<script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".grid-item"), {
+        max: 25,
+        speed: 400,
+        // scale: 1.1,  
+        glare: true,
+        "max-glare": 0.3,
+        // "glare-prerender": false,
+        gyroscope: true,
+    });
 
-<!-- <div><span class="contando">10</span> pessoas vendo este anuncio</div> -->
+</script>
 
 <footer>
-    <!-- <p>Feito com ❤ por @pedroperegrinaa<span class="underline-footer">_</span></p> -->
     <p>Feito com ❤ por @pedroperegrinaa</p>
 </footer>
 
