@@ -3,6 +3,15 @@
   background-color: #111;
 }
 
+.icons {
+  /* width: 25px; */
+  height: 30px;
+}
+
+.js-tilt-glare {
+  border-radius: 20px;
+}
+
 .parte2 h1 {
   /* titulo section projetos */
   text-align: center;
@@ -12,20 +21,30 @@
   margin-top: 150px;
 }
 
+.projetos::after {
+  content: "";
+  position: absolute;
+  top: 850px;
+  left: -200px;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(40%);
+  /* z-index: 0; */
+}
+
 .projetos {
   width: 880px;
   margin: 0px auto;
   margin-bottom: 200px;
-}
-
-.grid-item,
-.card {
-  text-decoration: none;
-  margin-top: 20px;
-  border-radius: 20px;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
+  z-index: 10;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -34,15 +53,15 @@
     rgba(0, 0, 0, 0.05955885772277658) 100%
   );
   border-radius: 20px;
-
   color: #fff;
   width: 280px;
   margin: 0px auto;
-  transition: all 0.2s ease-in-out;
   height: 500px;
   text-align: center;
-  border-top: 1px solid #8b8b8b;
-  border-left: 1px solid #8b8b8b;
+  border-top: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -52,25 +71,11 @@
   }
 }
 
-/* .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0px 2em #ffffff11;
-} */
-
 .card:hover .button-ver {
   display: inline-block;
   opacity: 1;
   top: 10px;
 }
-
-/* .card-image {
-  height: 250px;
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
-  object-position: center;
-  background-color: #fff;
-} */
 
 .card .card-texto {
   padding: 5px 25px 0px 25px;
@@ -81,7 +86,6 @@
 }
 
 .card h2 {
-  /* display: none; */
   position: absolute;
   color: #ffffff10;
   font-size: 100pt;
@@ -91,9 +95,10 @@
 }
 
 .card h3 {
-  padding-top: 150px;
+  padding-top: 130px;
   margin-bottom: 0px;
   font-size: 30px;
+  height: 80px;
 }
 
 .card p {
@@ -132,8 +137,8 @@
 }
 
 .button-ver {
+  transform: translateZ(20px);
   cursor: pointer;
-  /* display: none; */
   background-color: #ffffff55;
   position: relative;
   border: none;
@@ -145,7 +150,10 @@
   opacity: 0;
   top: 30px;
   transition: 0.3s;
-  /* transition: top ease 2s; */
+  border-top: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+  border-bottom: 1px solid #464646;
+  border-right: 1px solid #464646;
 }
 
 .button-ver:hover {
