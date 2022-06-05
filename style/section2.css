@@ -1,6 +1,8 @@
 .parte2 {
+position: relative;
+z-index: 6;
   padding-top: 1px;
-  background-color: #111;
+  background-color: #000;
 }
 
 .icons {
@@ -18,45 +20,53 @@
   color: aliceblue;
   font-weight: bold;
   font-size: 24pt;
-  margin-top: 150px;
+  margin-top: 130px;
+  margin-bottom: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-.projetos::after {
-  content: "";
-  position: absolute;
-  top: 850px;
-  left: -200px;
-  width: 50%;
-  height: 50%;
-  background: linear-gradient(#f00, #f0f);
-  clip-path: circle(40%);
-  /* z-index: 0; */
-}
+
 
 .projetos {
+  z-index: 5;
   width: 880px;
   margin: 0px auto;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   display: grid;
-  gap: 1.5em;
+  gap: 200px 40px;
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* .projetos::after{
+  z-index: 1;
+  content: "";
+  position:absolute; 
+  z-index: 2; 
+  width: 600px; 
+  height: 600px; 
+  background: rgb(240,1,216);
+background: linear-gradient(135deg, rgba(240,1,216,1) 0%, rgba(240,1,1,0.5553571770505077) 100%);
+  border-radius: 50%;
+  bottom: -600px;
+} */
+
 .card {
-  z-index: 10;
+  /* position: relative; */
+  z-index: 6;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     130deg,
-    rgba(255, 255, 255, 0.17720591654630602) 0%,
+    rgba(255, 255, 255, 0.262) 0%,
     rgba(0, 0, 0, 0.05955885772277658) 100%
   );
   border-radius: 20px;
   color: #fff;
   width: 280px;
   margin: 0px auto;
-  height: 500px;
+  height: 550px;
   text-align: center;
   border-top: 1px solid #c0c0c0;
   border-left: 1px solid #c0c0c0;
@@ -137,6 +147,7 @@
 }
 
 .button-ver {
+  margin-top: 30px;
   transform: translateZ(20px);
   cursor: pointer;
   background-color: #ffffff55;
@@ -157,7 +168,7 @@
 }
 
 .button-ver:hover {
-  background-color: rgb(210, 101, 253);
+  background-color: #d265fd;
   box-shadow: 0 0 2em #d054d2;
   -webkit-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
@@ -167,21 +178,23 @@
 
 /******************************************************/
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .parte2 h1 {
-    margin-top: 0px;
+    margin-top: 50px;
   }
   .projetos {
     grid-template-columns: repeat(2, 1fr);
     width: 580px;
+    gap: 100px 40px;
+
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .projetos {
     grid-template-columns: 1fr;
     width: 280px;
-    margin-bottom: 100px;
+    gap: 40px 40px;
   }
 }
 
@@ -189,6 +202,8 @@
   .projetos {
     grid-template-columns: 1fr;
     width: 95%;
+
+
   }
   .card {
     width: 250px;
