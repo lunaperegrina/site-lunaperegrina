@@ -52,28 +52,32 @@ body {
 
 .parte1 .parte1-img {
   /* flex: 1; */
-  margin: 0px auto;
+  /* margin: 0px auto; */
   width: 370px;
   height: 370px;
-  object-fit: cover;
-  object-position: center;
-  border: 40px solid rgb(255, 248, 219, 0.05);
-  box-shadow: inset 0 0 1em gold;
-  border-radius: 500px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* Adicionar os prefixos dos navegadores */
+  /* border: 40px solid rgb(255, 248, 219, 0.05); */
+  box-shadow: inset 0px 0px 40px 40px #DBA632;  
+  border-radius: 50%;
 }
 
-.parte1 .teste {
-  flex: 1;
-  margin: 0px auto;
+
+.img-perfil {
+  background-color: #e7aaff10;
+  margin-left: 50px;
+  border-radius: 50%;
   width: 450px;
   height: 450px;
-  backdrop-filter: blur(2px);
-  background-color: rgb(255, 248, 219, 0.05);
-  border-radius: 400px;
+  text-align: center;
 }
 
-.parte1 .teste-flex {
-  flex: 1;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .img-perfil {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
 }
 
 /****************************************************/
@@ -93,6 +97,9 @@ body {
 
 @media (max-width: 900px) {
   .parte1 .parte1-img {
+    display: none;
+  }
+  .img-perfil {
     display: none;
   }
   .parte1 {
