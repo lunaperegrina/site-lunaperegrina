@@ -101,6 +101,10 @@ header a {
   color: #fff;
 }
 
+header nav ul a {
+  cursor: pointer;
+}
+
 /****************************************************************/
 
 @media (max-width: 600px) {

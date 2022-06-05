@@ -5,10 +5,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 1200px;
-  margin: 0px auto;
+  margin: 130px auto;
   top: -50px;
   align-items: center;
-  height: 90vh;
+  /* height: 80vh; */
   z-index: 4;
 }
 
