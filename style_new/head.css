@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'tt-hoves';
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
+
+@font-face {
+    font-family: "tt-hoves";
+    src: url("../assets/tt-hoves/tt-hoves-bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "tt-hoves";
+    src: url("../assets/tt-hoves/tt-hoves-medium.woff") format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("../assets/tt-hoves/tt-hoves-regular.woff") format('woff');
+    font-weight: lighter;
+}
+
+.bold-word{
+    font-weight: bold;
+}
+
+.gd-pink-1 {
+    background: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap'); */

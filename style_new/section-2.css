@@ -1,0 +1,24 @@
+.section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px auto;
+    align-items: center;
+    width: 1200px;
+    
+}
+
+.sobre-mim {
+    padding-left: 2em;
+}
+
+.sobre-mim h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sobre-mim p {
+    font-size: 1em;
+    line-height: 150%;
+    width: 310px;
+    
+}
