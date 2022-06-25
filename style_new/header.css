@@ -14,5 +14,14 @@
 .navbar ul a {
     text-decoration: none;
     color: aliceblue;
+    display: flex;
+    align-items: center;
 }
+
+.navbar ul a img {
+    margin-left: 12px;
+    height: 24px;
+    width: 24px;
+}
+
 
