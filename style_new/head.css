@@ -7,6 +7,21 @@ html, body {
     color: white;
 }
 
+body {
+    background-color: #0c0b0b;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 12% 65%, rgb(111, 15, 135) 0, transparent 10%);
+}
+
+.glass {
+   backdrop-filter: blur(200px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background-color: rgba(17, 25, 40, 0.75);
+}
+
+
+
 @font-face {
     font-family: "tt-hoves";
     src: url("../assets/tt-hoves/tt-hoves-bold.woff") format('woff');
