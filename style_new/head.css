@@ -9,15 +9,16 @@ html, body {
 
 body {
     background-color: #0c0b0b;
-    background-image: url(../assets/background.png)
+    background-image: url(../assets/background-2.png);
+    scroll-behavior: smooth;
 }
 
-.glass {
-   backdrop-filter: blur(200px);
+/* .glass {
+   backdrop-filter: blur(300px) saturate(180%);
    -webkit-backdrop-filter: blur(16px) saturate(180%);
    background-color: rgba(0, 0, 0, 0.75);
 }
-
+ */
 
 
 @font-face {
