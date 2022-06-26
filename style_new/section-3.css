@@ -18,7 +18,7 @@
   .section-3 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 100px auto 200px 8%;
+    margin: 100px auto 100px;
     align-items: center;
     width: 1200px;
     gap: 80px;
@@ -32,10 +32,11 @@
     padding-top: 50px;
 
     border-radius: 20px;
-    
-  background-color:#D9D9D905;
-  text-align: center;
-  }
+    text-align: center;
+
+    background: rgba(217, 217, 217, 0.02);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
   .item-grid img {
     width: 70%;
@@ -47,7 +48,10 @@
     font-size: 2.5em;
     font-weight: bold;
      margin: auto;
-    height: 100px;  
+    height: 100px; 
+    display : flex;
+    align-items : center;
+    justify-content : center; 
   }
 
   .item-grid p {

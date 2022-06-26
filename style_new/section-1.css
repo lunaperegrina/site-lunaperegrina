@@ -1,14 +1,12 @@
 .section-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px auto 200px 8%;
+    margin: 100px auto 200px;
     align-items: center;
     width: 1200px;
     /* height: 60vh; */
-}
-
-.section-1 .titulo {
-    /* padding-left: 2em; */
+    position: relative;
+    z-index: 10;
 }
 
 .section-1 h1 {
@@ -17,7 +15,6 @@
     line-height: 75%;
     margin-bottom: 30px;
     margin-top: 0px;
-    
 }
 
 .section-1 h2 {
@@ -40,3 +37,22 @@
     margin: 0px auto;   
     border-radius: 10%;
 }
+
+@media (max-width: 1200px) {
+
+    .section-1 {
+      grid-template-columns: 1fr;
+      width: 80%;
+    }
+
+    .section-1 h1 {
+        font-size: 7em;
+    }
+    
+    .section-1 img {
+        /* grid-column-start: 1;
+        grid-row-start: 1; */
+        margin-top: 100px;
+    }
+  }
+  

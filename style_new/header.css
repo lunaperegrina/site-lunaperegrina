@@ -3,8 +3,11 @@
     flex-direction: row;
     font-size: larger;
     font-weight: bold;
-    margin: 0px auto 0px 8%;
+    margin: 0px auto 0px;
     padding-top: 30px;
+    position: relative;
+    z-index: 10;
+    width: 1200px;
 }
 
 .navbar ul {
@@ -54,4 +57,13 @@
   
 .navbar ul a:hover {
   background-size: 0 3px, 100% 3px;
+}
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+  }
 }
