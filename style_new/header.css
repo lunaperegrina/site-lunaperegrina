@@ -1,14 +1,18 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    font-size: medium;
+    font-size: larger;
     font-weight: bold;
-    margin: 0px auto 0px 10%;
+    margin: 0px auto 0px 8%;
     padding-top: 30px;
 }
 
 .navbar ul {
     padding: 0px 20px;
+}
+
+.navbar ul:first-child{
+    padding-left: 8px;
 }
 
 .navbar ul a {
@@ -25,12 +29,12 @@
     width: 24px;
 }
 
-a {
+.navbar ul a {
     color: inherit;
     text-decoration: none;
   }
   
-  a {
+.navbar ul a {
     background:
       linear-gradient(
         to right,
@@ -46,8 +50,8 @@ a {
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
-  }
+}
   
-  a:hover {
-    background-size: 0 3px, 100% 3px;
-  }
+.navbar ul a:hover {
+  background-size: 0 3px, 100% 3px;
+}

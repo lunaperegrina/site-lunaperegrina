@@ -1,24 +1,34 @@
 .section-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px auto;
+    margin: 100px auto 200px 8%;
     align-items: center;
     width: 1200px;
     
 }
 
-.sobre-mim {
-    padding-left: 2em;
-}
-
 .sobre-mim h2 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
-.sobre-mim p {
-    font-size: 1em;
-    line-height: 150%;
-    width: 310px;
+.sobre-mim h2::after {
+    content: "";
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 50px;
+    height: 6px;
+    background: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
     
+    display: block;
+  }
+
+.sobre-mim p {
+    font-size: 1.5em;
+    line-height: 150%;
+    margin-right: 100px;
+}
+
+.section-2 img {
+    width: 600px;
 }

@@ -1,14 +1,14 @@
 .section-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px auto 300px;
+    margin: 100px auto 200px 8%;
     align-items: center;
     width: 1200px;
     /* height: 60vh; */
 }
 
 .section-1 .titulo {
-    padding-left: 2em;
+    /* padding-left: 2em; */
 }
 
 .section-1 h1 {
@@ -16,6 +16,7 @@
     font-weight: bold;
     line-height: 75%;
     margin-bottom: 30px;
+    margin-top: 0px;
     
 }
 
@@ -26,9 +27,13 @@
 
 .section-1 h2::after {
     content: "";
-    height: 20em;
-    color: antiquewhite;
-    background-color: antiquewhite;
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 250px;
+    height: 6px;
+    background: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    
+    display: block;
   }
 
 .section-1 img {
