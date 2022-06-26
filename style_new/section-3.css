@@ -1,7 +1,7 @@
 .section-3 h2 {
     font-size: 3em;
     font-weight: bold;
-    margin-left: 8%;
+    margin: 0px auto;
 }
 
 .section-3 h2::after {
@@ -33,6 +33,8 @@
 
     border-radius: 20px;
     text-align: center;
+        width: 350px;
+
 
     background: rgba(217, 217, 217, 0.02);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -100,4 +102,53 @@ margin: 0px 10px;
 
 .item-grid ul li img {
 width: 28px;
+}
+
+
+@media (max-width: 1250px) {
+
+  .section-3 .grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 740px;
+    margin: 0px auto;
+    gap: 40px;
+
+  }
+
+  .item-grid {
+    width: 350px;
+ 
+ }
+
+}
+
+
+@media (max-width: 850px) {
+  .section-3 .grid {
+    grid-template-columns: 1fr;
+    width: 350px;
+    margin: 0px auto;
+
+    }
+
+  .item-grid {
+   margin: 0px auto;
+
+}
+
+}
+
+@media (max-width: 400px) {
+  .section-3 .grid {
+    width: 90%;
+    margin: 0px auto;
+    }
+
+    .section-3 .grid .item-grid {
+      width: 90%;
+    }
+
+    .section-3 h3 {
+      font-size: 2em;
+    }
 }
