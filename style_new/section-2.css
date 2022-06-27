@@ -37,7 +37,9 @@
 
     .section-2 {
         grid-template-columns: 1fr;
-        width: 80%;
+        width: 90%;
+        margin-bottom: 50px;
+
     }
 
     .sobre-mim p {
@@ -54,4 +56,30 @@
     .section-2 img {
         width: 90%;
     }
+  }
+  @media (max-width: 600px) {
+    .section-2 {
+        margin-top: 50px;
+    }
+    .sobre-mim h2 {
+        font-size: 2em;
+    }
+    .sobre-mim p {
+        font-size: 1.2em;
+    }
+    .section-2 img {
+        display: none;
+    }
+    
+  }
+  
+  @media (max-width: 330px) {
+    .section-2 {
+        margin-top: 50px;
+    }
+
+    .sobre-mim p {
+        font-size: 1em;
+    }
+
   }

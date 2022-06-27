@@ -5,6 +5,7 @@ html, body {
     font-family: 'tt-hoves';
     background-color: rgb(16, 16, 16);
     color: white;
+    overflow-x: hidden;
 }
 
 body {

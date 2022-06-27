@@ -1,7 +1,8 @@
 .section-3 h2 {
     font-size: 3em;
     font-weight: bold;
-    margin: 0px auto;
+    margin: 0px auto 70px;
+    width: 80%;
 }
 
 .section-3 h2::after {
@@ -114,6 +115,9 @@ width: 28px;
     gap: 40px;
 
   }
+  .section-3 h2 {
+    width: 90%;
+}
 
   .item-grid {
     width: 350px;
@@ -138,10 +142,20 @@ width: 28px;
 
 }
 
+@media (max-width: 600px) {
+  .section-3 h2 {
+    font-size: 2em;
+}
+}
+
 @media (max-width: 400px) {
   .section-3 .grid {
     width: 90%;
     margin: 0px auto;
+    }
+    
+    .section-3 h2 {
+      margin-bottom: 20px;
     }
 
     .section-3 .grid .item-grid {
