@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,240 +7,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="É aqui onde guardo meus projetinhos e links úteis sobre mim :D. Fique a vontade!">
 
-    <script src="./scripts/masonry.pkgd.min.js"></script>
-
+    <link rel="stylesheet" href="style/head.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/section1.css">
-    <link rel="stylesheet" href="style/section2.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/bolha.css">
-    <link rel="stylesheet" href="style/typing.css">
+    <link rel="stylesheet" href="style/section-1.css">
+    <link rel="stylesheet" href="style/section-2.css">
+    <link rel="stylesheet" href="style/section-3.css">
+    <link rel="stylesheet" href="style/hamburguer.css">
+    <link rel="stylesheet" href="style/particles.css">
 
-    <link rel="shortcut icon" type="imagex/png" href="images/win-icon.svg">
 
-    <script src="scripts/particles.min.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/images/icons-social/foguinho.svg">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB6090JP52"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-QB6090JP52');
-    </script>
-
-    <title>pedroperegrinaa</title>
-
+    <title>Pedro Peregrina</title>
 </head>
 
-<div class="tenta-aqui">
-    <div id="particles-js" style="position: absolute; z-index: 0; height: 100%; width: 100%;"></div>
-</div>
+
+<!-- <script src="./assets/scripts/particles.min.js"></script>
 <script src="scripts/particles.js"></script>
+<div id="particles-js"></div> -->
+
+
 
 <body>
 
-    <header>
-        <a href="#" class="home-icon"> <span class="sr-only"></span> <span style="color: #e7aaff;">&lt;/></span></a>
-        <nav>
-            <ul>
+    <div class="glass">
+        <header>
+            <nav id="nav" class="navbar">
 
+                <!-- <button id="btn-mobile"><img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset=""></button> -->
+                <img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset="">
 
-                <li>
-                    <a target="_blank" href="http://linkedin.com/in/pedroperegrinaa"><span
-                            style="color: #e7aaff;">/</span>Linkedin</a>
-                    <a target="_blank" href="http://github.com/pedroperegrinaa"><span
-                            style="color: #e7aaff;">/</span>GitHub</a>
-                    <a target="_blank" href="http://twitter.com/pedroperegrinaa"><span
-                            style="color: #e7aaff;">/</span>Twitter</a>
-                    <a target="_blank"
-                        href="https://cliff-aurora-3c2.notion.site/Estudos-08ca68e1739a43c9adab28d19aa0a3b6"><span
-                            style="color: #e7aaff;">/</span>Estudos</a>
-                    <a target="_blank" href="./assets/curriculo-pedro-peregrina.pdf">
-                        <span style="color: #e7aaff;">/</span>Currículo
+                <ul id="menu">
+                    <li>
+                        <a href="http://linkedin.com/in/pedroperegrinaa">
+                            Linkedin
+                            <img src="assets/images/icons-social/linkedin.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/pedroperegrinaa">
+                            GitHub
+                            <img src="assets/images/icons-social/github.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/pedroperegrinaa">
+                            Twitter
+                            <img src="assets/images/icons-social/twitter.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cliff-aurora-3c2.notion.site/Estudos-08ca68e1739a43c9adab28d19aa0a3b6">
+                            Notion
+                            <img src="assets/images/icons-social/notion.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./assets/curriculo-pedro-peregrina.pdf">
+                            Currículo
+                            <img src="assets/images/icons-social/acrobat-reader.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="./nsfw/index.html">
+                            NSFW
+                            <img src="assets/images/icons-social/foguinho.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-1">
+            <div class="titulo gd-pink-1">
+                <h1>
+                    Pedro Peregrina
+                </h1>
+                <h2>
+                    Desenvolvedor <span class="bold-word">NodeJS</span> | <span class="bold-word">React</span>
+                </h2>
+            </div>
+            <img src="images/pedroperegrina piercing.jpg" alt="" srcset="">
+        </section>
+
+        <section class="section-2">
+            <div class="sobre-mim">
+                <h2>
+                    Sobre mim
+                </h2>
+                <p>
+                    Amo fazer <span class="bold-word">arte 3D</span> com
+                    <span class="bold-word">Blender</span> e <span class="bold-word">desenhar</span>.
+                    Sei o básico sobre os softwares da suíte <span class="bold-word">Adobe</span>,
+                    <span class="bold-word">FL Studio</span> e <span class="bold-word">Figma</span>,
+                    mas minha verdadeira paixão é o <span class="bold-word">código</span>.
+                </p>
+            </div>
+            <img src="./assets/images/PROGRAMAS.svg" alt="" srcset="">
+        </section>
+
+        <section class="section-3">
+            <h2>
+                Portifólio
+            </h2>
+            <div class="grid">
+
+                <div class="item-grid">
+                    <img src="assets/images/thumbs-projects/twitter-banner-followers.svg" alt="" srcset="">
+                    <h3 class="gd-pink-1">Twitter Banner Followers</h3>
+                    <p>Coloca as últimas pessoas que te seguiram no Twitter dentro do banner da sua conta ;D</p>
+                    <a target="_blank" href="https://github.com/pedroperegrinaa/twitter-banner-followers">
+                        <button class="button-ver">Ver</button>
                     </a>
-                    <a target="_blank" href="./nsfw/index.html">
-                        <span style="color: #e7aaff;">/</span>NSFW
+                    <ul>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-nodejs.svg" alt="icone NodeJS" class="icons">
+                        </li>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-docker.svg" alt="icone Docker" class="icons">
+                        </li>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-heroku.svg" alt="icone Heroku" class="icons">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-grid">
+                    <img src="assets/images/thumbs-projects/twitter-stalker.svg" alt="" srcset="">
+                    <h3 class="gd-pink-1">Twitter Stalker</h3>
+                    <p>Este software faz o monitoramento de contas do Twitter com apoio da Twitter API V2.</p>
+                    <a target="_blank" href="https://github.com/pedroperegrinaa/twitter-stalker">
+                        <button class="button-ver">Ver</button>
                     </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="parte1">
-        <div class="texto">
-            <h1 class="typing">Pedro Peregrina<span class="underline">_</span></h1>
-            <h2>Desenvolvedor ReactJS | NodeJS | Flutter</h2>
-
-            <p>
-                Amo aprender coisas novas. Sei fazer <span style="color: orange; ">arte 3D com Blender</span>,
-                <span style="color: antiquewhite; ">desenhar</span>,
-                usar <span style="color: #ff8181; ">softwares Adobe</span>
-                e <span style="color: greenyellow; ">FL Studio</span>,
-                mas sou completamente apaixonado por
-                <span style="color: aqua; ">código</span>.
-                Me sinto confortável ao desenvolver em
-                <span style="color: #71da68; ">NodeJS</span>,
-                <span style="color: #61DAFB; ">ReactJS </span>
-                e
-                <span style="color: #70b3ff ">Flutter</span>.
-
-            </p>
-
-        </div>
-
-        <div class="img-perfil">
-            <img class="parte1-img" src="images/pedroperegrina piercing.jpg" alt="Foto de Pedro Peregrina">
-
-        </div>
-
-    </section>
-
-    <section class="parte2 ">
-
-        <h1 class="typing">Projetos<span class="underline">_</span></h1>
-
-        <div class="projetos">
-
-            <div class="card">
-                <div class="card-texto">
-                    <h2>01</h2>
-                    <h3>Easybank</h3>
-                    <p>Landing page de um banco de próxima geração! </p>
+                    <ul>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-nodejs.svg" alt="icone NodeJS" class="icons">
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-html5.svg" alt="" class="icons"></li>
-                    <li><img src="images/icons-svg/icon-css3.svg" alt="" class="icons"></li>
-                </ul>
-                <a target="_blank" href="./easybank/index.html"><button class="button-ver">Ver</button></a>
-            </div>
 
-            <!-- <div class="bolha"></div> -->
-
-            <div class="card">
-                <div class="card-texto">
-                    <h2>02</h2>
-                    <h3>API: Alunos e Admins</h3>
-                    <p>Essa API gerencia alunos e admins de um sistema com autenticação JWT. </p>
+                <div class="item-grid">
+                    <img src="assets/images/thumbs-projects/easybank.svg" alt="" srcset="">
+                    <h3 class="gd-pink-1">Easybank</h3>
+                    <p>Landing page de um banco preparado para o futuro!</p>
+                    <a target="_blank" href="easybank/index.html">
+                        <button class="button-ver">Ver</button>
+                    </a>
+                    <ul>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-html5.svg" style="width: 25px;" alt="icone html5"
+                                class="icons">
+                        </li>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-css3.svg" alt="icone css3" class="icons"
+                                style="width: 25px;">
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-nodejs.svg" alt="" class="icons"></li>
-                    <li><img src="images/icons-svg/icon-express.svg" alt="" class="icons" style="width: 40px;"></li>
-                    <li><img src="images/icons-svg/icon-mysql.svg" alt="" class="icons"></li>
-                    <li><img src="images/icons-svg/icon-jwt.svg" alt="" class="icons"></li>
-                </ul>
-                <a target="_blank" href="https://github.com/pedroperegrinaa/CRUD-alunos-com-imagens">
-                    <button class="button-ver">Ver</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="card-texto">
-                    <h2>03</h2>
-                    <h3>Task Manager CLI</h3>
-                    <p>Programa CLI para gerenciamento de tarefas. Até o momento, permite criar e deletar notas.
-                    </p>
-                </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-nodejs.svg" alt="" class="icons"></li>
-                </ul>
-                <a target="_blank" href="https://github.com/pedroperegrinaa/task-manager-cli">
-                    <button class="button-ver">Ver</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="card-texto">
-                    <h2>04</h2>
-                    <h3>NFT Card</h3>
+                <div class="item-grid">
+                    <img src="assets/images/thumbs-projects/image-equilibrium.jpg" alt="" srcset="">
+                    <h3 class="gd-pink-1">NFT Card</h3>
                     <p>Curte um esqueminha de pirâmide? Então você vai amar essa view!</p>
+                    <a target="_blank" href="./nft-card/index.html">
+                        <button class="button-ver">Ver</button>
+                    </a>
+                    <ul>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-html5.svg" style="width: 25px;" alt="icone html5"
+                                class="icons">
+                        </li>
+                        <li>
+                            <img src="assets/images/icons-tools/icon-css3.svg" alt="icone css3" class="icons"
+                                style="width: 25px;">
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-html5.svg" alt="" class="icons"></li>
-                    <li><img src="images/icons/icon-css3.png" alt="" class="icons"></li>
-                </ul>
-
-                <a target="_blank" href="./nft-card/index.html"><button class="button-ver">Ver</button></a>
-            </div>
-
-            <div class="card">
-                <div class="card-texto">
-                    <h2>05</h2>
-                    <h3>Lista Telefônica</h3>
-                    <p>É uma ótima forma de salvar seus contatos! Pare de usar agendas de papel, tal qual os incas e
-                        astecas.</p>
+                <div class="item-grid">
+                    <img src="assets/images/thumbs-projects/task-cli.png" alt="" srcset="">
+                    <h3 class="gd-pink-1">Task <br> Manager CLI</h3>
+                    <p>Programa CLI para gerenciamento de tarefas. Até o momento, permite criar e deletar notas.</p>
+                    <a target="_blank" href="https://github.com/pedroperegrinaa/task-manager-cli">
+                        <button class="button-ver">Ver</button>
+                    </a>
+                    <ul>
+                        <li>
+                            <img src="images/icons-svg/icon-nodejs.svg" alt="" class="icons">
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-nodejs.svg" alt="" class="icons"></li>
-                    <li><img src="images/icons-svg/icon-react.svg" alt="" class="icons"></li>
-                </ul>
-
-                <a target="_blank" href="https://pedroperegrinaa.github.io/react-lista-telefonica/">
-                    <button class="button-ver">Ver</button></a>
             </div>
+        </section>
 
-            <div class="card">
-                <div class="card-texto">
-                    <h2>06</h2>
-                    <h3>Gráfico de playlists</h3>
-                    <p>Uma ótima forma de ver a evasão de cursos online! Utilizei a API V3 do YouTube para coletar
-                        os dados :D.</p>
-                </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-react.svg" alt="" class="icons"></li>
-                </ul>
+    </div>
+    <script>
 
-                <a target="_blank" href="https://pedroperegrinaa.github.io/react-playlist-graphic/">
-                    <button class="button-ver">Ver</button></a>
-            </div>
+        const btnMobile = document.getElementById('btn-mobile');
+        console.log('aaa')
+        console.log(btnMobile);
 
-            <div class="card">
-                <div class="card-texto">
-                    <h2>07</h2>
-                    <h3>Twitter Stalker</h3>
-                    <p>Dê um node index.js nesse programa e você estará sempre de olho em tudo que AQUELA pessoa faz
-                        no twitter.</p>
-                </div>
-                <ul>
-                    <li><img src="images/icons-svg/icon-nodejs.svg" alt="" class="icons"></li>
-                </ul>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            console.log('clocou');
+            nav.classList.toggle('active');
+        }
 
-                <a target="_blank" href="https://github.com/pedroperegrinaa/twitter-stalker/">
-                    <button class="button-ver">Ver</button></a>
-            </div>
+        if (btnMobile) {
+            console.log('bbb');
+            btnMobile.addEventListener('click', toggleMenu);
+        }
 
-        </div>
-
-    </section>
-
-    <!-- <div class="b-container">
-        <img src="images/circle.svg" class="bubble" width="250" height="250">
-        <img src="images/circle.svg" class="bubble" width="300" height="300">
-        <img src="images/circle.svg" class="bubble" width="100" height="100">
-        <img src="images/circle.svg" class="bubble" width="500" height="500">
-    </div> -->
+    </script>
 
 </body>
-
-<script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
-<script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-        max: 25,
-        speed: 400,
-        // scale: 1.1,
-        glare: true,
-        "max-glare": 0.3,
-        // "glare-prerender": false,
-        gyroscope: true,
-    });
-
-</script>
-
-<footer>
-    <p>Feito com ❤ por @pedroperegrinaa</p>
-</footer>
 
 </html>

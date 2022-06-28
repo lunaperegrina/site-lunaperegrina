@@ -1,115 +1,75 @@
-@font-face {
-  font-family: "Hermit";
-  src: url("../font-hermit/hermit-regular-webfont.woff") format("woff");
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 30px auto 0px;
+  padding: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-@-moz-document url-prefix() {
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: visible;
-  }
-}
-
-
-
-@keyframes desativar-rolagem {
-  from {
-    height: 100%;
-    overflow-y: hidden;
-  }
-  to {
-    height: 100%;
-    overflow-y: visible;
-  }
-}
-
-
-html {
-  scroll-behavior: smooth;
-  font-family: "Hermit";
-  background: rgb(50, 15, 93);
-  background: linear-gradient(90deg, rgb(50, 15, 93) 0%, #b700ff 100%);
-} 
-
-/******************** BARRA DE ROLAGEM PERSONALIZADA *********************/
-
-:target {
-  scroll-margin-top: 0.8em;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #111;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #b500fc;
-  border-radius: 5px;
-  border: 0px solid #111;
-}
-
-/******************************************************************************/
-
-body {
-  margin: 0px;
-  color: aliceblue;
-  z-index: 1;
-}
-
-header {
-  position: relative;
+.navbar li {
   display: flex;
   align-items: center;
-  color: #1c67a9;
-  width: 95%;
-  padding: 0px 10px 0px 10px;
-  margin: 30px auto 0px auto;
-  text-align: center;
-  justify-content: space-between;
-  z-index: 3;
+  justify-content: center;
+  height: 80px;
+  padding: 0px 25px;
 }
 
-header .home-icon {
-  /* flex: 1; */
-  font-size: 16pt;
-  text-align: left;
-  padding-left: 30px;
+.navbar ul li:first-child{
+  padding-left: 8px;
 }
 
-header ul {
-  list-style: none;
-  font-size: 14pt;
-  padding-right: 30px;
-  color: #fff;
-}
-
-header a {
+.navbar a {
   text-decoration: none;
-  color: #fff;
+  color: #EEE;
+  font-size: 18pt;
 }
 
-header nav ul a {
-  cursor: pointer;
+.navbar ul li a img {
+  margin-left: 12px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 8px;
 }
 
-/****************************************************************/
 
-@media (max-width: 600px) {
+/* EFEITO HOVER */
 
-  header {
-    flex-direction: column;
+.navbar ul li a {
+  padding-bottom: 10px;
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(
+      to right,
+      #FD93C9,
+      #9431e6
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.navbar ul li a:hover {
+background-size: 0 3px, 100% 3px;
+}
+
+/* --- MEDIA QUERY --- */
+
+@media (max-width: 1200px) {
+
+  .navbar ul {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
   }
-}
+
+  .navbar {
+    margin: 0px auto;
+    width: 90%;
+  }
+} 
