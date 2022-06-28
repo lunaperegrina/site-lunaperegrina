@@ -34,7 +34,8 @@
         <header>
             <nav id="nav" class="navbar">
 
-                <button id="btn-mobile">Menu</button>
+                <!-- <button id="btn-mobile"><img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset=""></button> -->
+                <img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset="">
 
                 <ul id="menu">
                     <li>
@@ -198,7 +199,24 @@
         </section>
 
     </div>
-    <script src="./assets/scripts/hamburguer-1.js"></script>
+    <script>
+
+        const btnMobile = document.getElementById('btn-mobile');
+        console.log('aaa')
+        console.log(btnMobile);
+
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            console.log('clocou');
+            nav.classList.toggle('active');
+        }
+
+        if (btnMobile) {
+            console.log('bbb');
+            btnMobile.addEventListener('click', toggleMenu);
+        }
+
+    </script>
 
 </body>
 

@@ -1,81 +1,75 @@
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    font-size: larger;
-    font-weight: bold;
-    margin: 0px auto 0px;
-    padding-top: 30px;
-    position: relative;
-    z-index: 10;
-    width: 1200px;
-}
-
-.navbar ul li a:first-child{
-    padding-left: 8px;
-}
-
-.navbar ul li {
-  list-style: none;
   display: flex;
   flex-direction: row;
-  font-size: larger;
-  font-weight: bold;
-  margin: 0px auto 0px;
-  padding-top: 30px;
-  position: relative;
-  z-index: 10;
   width: 1200px;
-
+  margin: 30px auto 0px;
+  padding: 0px;
 }
 
-.navbar ul li a {
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    padding-bottom: 8px;
-    padding: 0px 20px;
+.navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0px 25px;
+}
 
+.navbar ul li:first-child{
+  padding-left: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #EEE;
+  font-size: 18pt;
 }
 
 .navbar ul li a img {
-    margin-left: 12px;
-    height: 24px;
-    width: 24px;
-    position: relative;
+  margin-left: 12px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 8px;
 }
 
+
+/* EFEITO HOVER */
+
 .navbar ul li a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-.navbar ul li a {
-    background:
-      linear-gradient(
-        to right,
-        rgba(100, 200, 200, 0),
-        rgba(100, 200, 200, 0)
-      ),
-      linear-gradient(
-        to right,
-        #FD93C9,
-        #9431e6
-    );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+  padding-bottom: 10px;
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(
+      to right,
+      #FD93C9,
+      #9431e6
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
-  
+
 .navbar ul li a:hover {
-  background-size: 0 3px, 100% 3px;
+background-size: 0 3px, 100% 3px;
 }
+
+/* --- MEDIA QUERY --- */
 
 @media (max-width: 1200px) {
 
-  .navbar {
+  .navbar ul {
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     justify-content: center;
   }
-}
+
+  .navbar {
+    margin: 0px auto;
+    width: 90%;
+  }
+} 

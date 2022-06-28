@@ -49,6 +49,8 @@
       grid-template-columns: 1fr;
       width: 90%;
       margin-bottom: 0px;
+      margin-top: 50px;
+
     }
 
     .section-1 h1 {
@@ -79,6 +81,15 @@
       }
   }
   
+  @media (max-width: 520px) {
+    
+    .section-1 h2::after {
+        content: "";
+
+        width: 50px;
+ 
+      }
+  }
   @media (max-width: 400px) {
     
     .section-1 h1 {
