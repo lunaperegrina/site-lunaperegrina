@@ -9,9 +9,10 @@ html, body {
 }
 
 body {
-    background-color: #0c0b0b;
-    background-image: url(../assets/background-3-compress.png);
+    background-color: #000;
+    background-image: url(../assets/background-4-compress.png);
     background-repeat: no-repeat;
+    background-position: center;
     scroll-behavior: smooth;
 }
 
